@@ -120,6 +120,10 @@ app.get('/api/doctors', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Backend is working on Vercel!');
+});
+
 // Get doctor by ID
 app.get('/api/doctors/:id', async (req, res) => {
   try {
