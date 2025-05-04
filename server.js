@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://frontend-intern-taupe.vercel.app/',  // Allow only your frontend URL
+  origin: 'https://frontend-intern-taupe.vercel.app',  // Allow only your frontend URL
   methods: ['GET', 'POST'],
 }));
 app.use(bodyParser.json());
